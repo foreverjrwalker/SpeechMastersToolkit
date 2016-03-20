@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/wotdDialog"
+		    android:textSize="16sp" />
+
+		<LinearLayout
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.42" >
+
+		    <Button
+		        android:id="@+id/wotd_button1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Vocab" />
+
+		    <Button
+		        android:id="@+id/wotd_button2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Dict" />
+
+		    <Button
+		        android:id="@+id/wotd_button3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="MW.com" />
+
+		    <Button
+		        android:id="@+id/wotd_button4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Quotes" />
+
+		    <Button
+		        android:id="@+id/wotd_button5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Urban" />
+		</LinearLayout>
+
+		<WebView
+		    android:id="@+id/webView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="5.68"
+		    android:clickable="true"
+		    android:focusableInTouchMode="true" />
+
+	</LinearLayout>

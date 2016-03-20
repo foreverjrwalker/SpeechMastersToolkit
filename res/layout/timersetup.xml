@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:singleLine="true"
+		    android:text="Please Configure the Time Settings for the Next Speech"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textSize="20sp" />
+
+		<LinearLayout
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<TextView
+			    android:id="@+id/PartNumberLabel"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="Number of Parts:"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+			    android:textSize="14sp" />
+
+			<EditText
+			    android:id="@+id/NumParts"
+			    android:layout_width="50dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:editable="true"
+			    android:inputType="number" />
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/linearLayout2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<TextView
+			    android:id="@+id/SpeechTimeLabel"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="Max Length of Speech (Mins):"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+			    android:textSize="14sp" />
+
+			<EditText
+			    android:id="@+id/SpeechTime"
+			    android:layout_width="50dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:editable="true"
+			    android:inputType="number" />
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/linearLayout3"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<TextView
+			    android:id="@+id/GreenWarningTimeLable"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:singleLine="true"
+			    android:text="Green Zone Start(mins):"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+			    android:textSize="14sp" />
+
+			<EditText
+			    android:id="@+id/GreenTime"
+			    android:layout_width="50dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:editable="true"
+			    android:inputType="number" />
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/linearLayout4"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<TextView
+			    android:id="@+id/YellowWarningTimeLable"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:singleLine="true"
+			    android:text="Yellow Zone Start(mins):"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+			    android:textSize="14sp" />
+
+			<EditText
+			    android:id="@+id/YellowTime"
+			    android:layout_width="50dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:editable="true"
+			    android:inputType="number" />
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/linearLayout5"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<TextView
+			    android:id="@+id/RedWarningTimeLabel"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:editable="false"
+			    android:singleLine="true"
+			    android:text="Red Zone Start(mins):"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+			    android:textSize="14sp" />
+
+			<EditText
+			    android:id="@+id/RedTime"
+			    android:layout_width="50dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:editable="true"
+			    android:inputType="number" />
+
+		</LinearLayout>
+
+		<Button
+		    android:id="@+id/startTimer"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/startTimerButton"
+		    android:textSize="14sp" />
+
+</LinearLayout>
